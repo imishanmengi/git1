@@ -58,6 +58,7 @@ function filterItems(e){
   // Convert to an array
   Array.from(items).forEach(function(item){
     var itemName = item.firstChild.textContent;
+    console.log(itemName);
     if(itemName.toLowerCase().indexOf(text) != -1){
       item.style.display = 'block';
     } else {
